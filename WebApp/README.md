@@ -1,6 +1,6 @@
-# GestureAirDrawPro (WebApp)
+# GestureAirDrawPro - WebApp
 
-Release: **v1.0.0 — GestureAirDrawPro**
+Release: **v1.0.0 — GestureAirDrawPro - WebApp**
 
 A single-file WebApp frontend that connects to an Arduino UNO (with an MPU6050) via the **Web Serial API**, receives ultra-detailed JSON gesture packets, draws the gesture path, shows extracted features and alternatives, and renders a simple 3D orientation preview.
 
@@ -8,7 +8,6 @@ A single-file WebApp frontend that connects to an Arduino UNO (with an MPU6050) 
 - `index.html` — main UI
 - `style.css` — styling
 - `script.js` — app logic (Web Serial, JSON parsing, simulator)
-- `extras/wiring.png` — wiring diagram (Arduino UNO ↔ MPU6050)
 - `README.md` — this file
 
 ## JSON format
