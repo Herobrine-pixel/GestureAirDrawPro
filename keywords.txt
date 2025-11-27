@@ -1,5 +1,0 @@
-BluetoothTonePlayer
-BluetoothTone
-Tone
-MELODY
-FX
