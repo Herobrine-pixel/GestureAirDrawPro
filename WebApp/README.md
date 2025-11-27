@@ -59,9 +59,6 @@ The app expects JSON messages similar to:
 3. Use simulator buttons to test: Triangle / Circle / Letter A.
 4. The app parses the JSON, draws the normalized path, shows features, and rotates the 3D cube to reflect pitch/roll.
 
-## Release notes & description
-**Release name:** GestureAirDrawPro v1.0.0  
-**Description:** A minimal, ready-to-run web frontend for testing and visualizing gesture JSON data from Arduino + MPU6050. Includes simulator and sample wiring diagram.
 
 ## License
 MIT
