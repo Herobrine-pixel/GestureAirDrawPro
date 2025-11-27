@@ -1,0 +1,11 @@
+# Arduino / PlatformIO ignores
+*.bin
+*.elf
+*.hex
+*.zip
+*.pyc
+.DS_Store
+.vscode/
+*.log
+build/
+.pio/

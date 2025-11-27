@@ -1,0 +1,1 @@
+If MPU6050 AD0=1 then address 0x69. For UNO use A4/A5 for SDA/SCL. Button on D2 to GND when pressed.

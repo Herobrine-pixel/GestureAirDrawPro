@@ -1,0 +1,23 @@
+{
+  "name": "GestureAirDrawPro",
+  "version": "1.0.0",
+  "description": "Air-draw gesture recognition using MPU6050 on Arduino UNO (DTW-based)",
+  "keywords": [
+    "gesture",
+    "imu",
+    "mpu6050",
+    "dtw",
+    "svg",
+    "airdraw"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/GestureAirDrawPro"
+  },
+  "frameworks": [
+    "arduino"
+  ],
+  "platforms": [
+    "atmelavr"
+  ]
+}
