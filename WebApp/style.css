@@ -1,0 +1,35 @@
+
+:root{
+  --bg:#0f1724;
+  --card:#0b1220;
+  --accent:#06b6d4;
+  --muted:#9aa6b2;
+  --panel:#071224;
+  --glass: rgba(255,255,255,0.02);
+}
+*{box-sizing:border-box;font-family:Inter,ui-sans-serif,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial}
+body{
+  margin:0;background:linear-gradient(180deg,#071224 0%, #081827 100%);color:#cfe7ef;
+}
+header{display:flex;justify-content:space-between;align-items:center;padding:14px 20px;border-bottom:1px solid rgba(255,255,255,0.03)}
+h1{margin:0;font-size:18px}
+main{display:flex;gap:16px;padding:18px}
+.left{flex:1}
+.right{width:420px;display:flex;flex-direction:column;gap:12px}
+canvas{background:linear-gradient(180deg,#08131a,#041019);width:100%;border-radius:8px;box-shadow:0 6px 20px rgba(0,0,0,0.6)}
+.controls{display:flex;gap:8px;align-items:center;margin-top:8px;flex-wrap:wrap}
+button{background:var(--accent);border:0;padding:8px 12px;border-radius:8px;color:#012;cursor:pointer;font-weight:600}
+button:disabled{opacity:.4;cursor:not-allowed}
+button.simBtn{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted);padding:6px 10px}
+.panel{background:var(--panel);padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,0.03)}
+.jsonbox{height:160px;overflow:auto;background:rgba(0,0,0,0.15);padding:8px;border-radius:6px;color:#dff;white-space:pre-wrap}
+#previewWrap{width:200px;height:200px;display:flex;align-items:center;justify-content:center;perspective:800px}
+#cube{position:relative;width:120px;height:120px;transform-style:preserve-3d;transition:transform 0.2s linear}
+.face{position:absolute;width:120px;height:120px;display:flex;align-items:center;justify-content:center;opacity:0.95;border:1px solid rgba(255,255,255,0.04);font-size:12px;color:#012}
+.face.front{transform:translateZ(60px);background:#a7f3d0}
+.face.back{transform:rotateY(180deg) translateZ(60px);background:#c7d2fe}
+.face.left{transform:rotateY(-90deg) translateZ(60px);background:#fbcfe8}
+.face.right{transform:rotateY(90deg) translateZ(60px);background:#fde68a}
+.face.top{transform:rotateX(90deg) translateZ(60px);background:#bfdbfe}
+.face.bottom{transform:rotateX(-90deg) translateZ(60px);background:#fecaca}
+footer{padding:12px 18px;text-align:center;color:var(--muted)}
