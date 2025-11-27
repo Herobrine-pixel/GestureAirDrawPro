@@ -1,5 +1,0 @@
-[env:uno]
-platform = atmelavr
-board = uno
-framework = arduino
-monitor_speed = 115200
