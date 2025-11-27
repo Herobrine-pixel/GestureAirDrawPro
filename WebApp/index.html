@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>GestureAirDrawPro</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header>
+  <h1>GestureAirDrawPro</h1>
+  <div id="status">Status: <span id="statusText">Idle</span></div>
+</header>
+
+<main>
+  <section class="left">
+    <canvas id="drawCanvas" width="800" height="500"></canvas>
+    <div class="controls">
+      <button id="connectBtn">Connect Web Serial</button>
+      <button id="disconnectBtn" disabled>Disconnect</button>
+      <button id="clearBtn">Clear</button>
+      <button class="simBtn" data-sim="triangle">Simulate Triangle</button>
+      <button class="simBtn" data-sim="circle">Simulate Circle</button>
+      <button class="simBtn" data-sim="A">Simulate Letter A</button>
+      <label for="scaleRange">Scale:</label>
+      <input id="scaleRange" type="range" min="1" max="40" value="12" />
+    </div>
+  </section>
+
+  <section class="right">
+    <div class="panel">
+      <h2>Parsed JSON</h2>
+      <pre id="rawJson" class="jsonbox">{}</pre>
+    </div>
+
+    <div class="panel">
+      <h2>Features</h2>
+      <div id="features">
+        <div><strong>Angles:</strong> <span id="angles">—</span></div>
+        <div><strong>Segments:</strong> <ul id="segments"></ul></div>
+        <div><strong>Total Length:</strong> <span id="length">—</span></div>
+        <div><strong>DTW Distance:</strong> <span id="dtw">—</span></div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <h2>Result</h2>
+      <div id="result">
+        <div><strong>Type:</strong> <span id="r_type">—</span></div>
+        <div><strong>Name:</strong> <span id="r_name">—</span></div>
+        <div><strong>Confidence:</strong> <span id="r_conf">—</span></div>
+        <div><strong>Alternatives:</strong>
+          <ul id="alts"></ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <h2>3D Orientation Preview</h2>
+      <div id="previewWrap">
+        <div id="cube">
+          <div class="face front">front</div>
+          <div class="face back">back</div>
+          <div class="face left">left</div>
+          <div class="face right">right</div>
+          <div class="face top">top</div>
+          <div class="face bottom">bottom</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <h2>Wiring</h2>
+      <img src="extras/wiring.png" alt="wiring" style="max-width:100%" />
+      <p>Arduino UNO ↔ MPU6050 (I2C): A4→SDA, A5→SCL, VCC→5V (or 3.3V), GND→GND</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <small>GestureAirDrawPro — Web Serial demo for Arduino UNO + MPU6050</small>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
