@@ -1,6 +1,6 @@
 {
   "name": "GestureAirDrawPro",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Air-draw gesture recognition using MPU6050 on Arduino UNO (DTW-based)",
   "keywords": [
     "gesture",
